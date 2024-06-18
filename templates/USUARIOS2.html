@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>USUARIO</title>
+    <link rel="stylesheet" href="../static/css/usuarios.css">
+</head>
+<body>
+     <div id="form_fundo">
+          <h1>DOWNLOAD DE ARQUIVOS</h1>
+          <div id="form_frente">
+              {% if arquivos %}
+                <form action="/download" method="post">
+                    <select name="arquivosParaDownload" id="arquivosParaDownload">
+                        {% for documento in arquivos %}
+                            <option value="{{documento}}">{{documento}}</option>
+                        {% endfor %}
+                    </select><br><br><br>
+                    <button type="submit">DOWNLOAD</button>
+                </form>
+              {% else %}
+                <h1>SEM ARQUIVOS NO BANCO DE DADOS PARA DOWNLOADS</h1>
+              {% endif %}
+          </div>
+     </div>
+</body>
+</html>

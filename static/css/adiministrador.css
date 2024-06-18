@@ -1,0 +1,80 @@
+@import url(../css/home.css);
+
+.titulo{
+    backdrop-filter: blur(30px);
+    opacity: .9;
+    font-size: 50px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+div.flash_alerta{
+    background-color: red;
+    font-size: 50px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+div#form_frente{
+    background-color: white;
+    margin: 5px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 2px 5px 5px black;
+    padding: 30px;
+    text-align: center;
+}
+
+div#form_fundo{
+    backdrop-filter: blur(10px);
+    opacity: .9;
+    margin: 2% 50% 5% 5%;
+    position: absolute;
+    text-align: center;
+}
+div#form_fundo.listaUsuarios{
+    backdrop-filter: blur(10px);
+    opacity: .9;
+    margin: 2% 1% 5% 51%;
+    position: relative;
+    text-align: center;
+}
+div#form_frente.listaUsuarios{
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    overflow-y: scroll;
+    height: 250px;
+}
+input:focus{
+    background-color: yellow;
+    color: black;
+}
+input{
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+button{
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+body{
+    background: url(../imagens/fundo.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
+}
+
+
